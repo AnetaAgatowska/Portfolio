@@ -1,11 +1,8 @@
 # Portfolio
 
-Website, which is my resume - both its code and content as well. I have learnt enourmous bunch of stuff during its creation. I hope You enjoy!
+Website, which is my resume.
 
-## [LIVE](https://monikakowalewska.pl)
-
-## Status
-Still _in progress_, but MVP is ready.
+## [LIVE](https://anetaagatowska.pl)
 
 ## Technologies used
 
@@ -17,6 +14,6 @@ Still _in progress_, but MVP is ready.
 4. A little bit of PHP (contact form)
 
 ## Contact
-Created by Monika Kowalewska - [here's my LinkedIn](http://www.linkedin.com/in/mon-kowalewska) - contact me anytime!
+Created by Aneta Agatowska - [here's my LinkedIn](https://www.linkedin.com/in/aneta-agatowska-5504b5192/)
 
 
