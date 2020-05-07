@@ -1,0 +1,88 @@
+.bio {
+  width: 75vw;
+  margin: 0 auto;
+  padding: 9vh 0;
+  color: $myGrey;
+
+  &__grid {
+    @include media(">tablet") {
+      display: grid;
+      grid-template: auto / repeat(3, 1fr);
+      justify-content: center;
+      place-items: stretch;
+      gap: 2vw;
+    }
+
+    &-item {
+      padding: 30px;
+      border-radius: 60px;
+      text-align: center;
+      box-shadow: 0 0 1em $myOrange;
+      @include media("<=tablet") {
+        margin: 20px 0;
+        max-width: 95vw;
+      }
+    }
+  }
+
+  &__img {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  &__header {
+    margin-bottom: 70px;
+    text-align: center;
+    color: $myPurple;
+    line-height: 1.2;
+    font: {
+      size: 3rem;
+      weight: 700;
+    }
+  }
+
+  &__h3 {
+    margin: 1rem 0;
+    text-align: center;
+    color: $myOrange;
+    font-size: 2.2rem;
+  }
+
+  &__h4 {
+    margin: 1rem 0;
+  }
+
+  &__text {
+    margin: 5px 0;
+    text-align: left;
+    font-size: 0.97rem;
+
+    &--highlighted {
+      background-color: $myPurple;
+      color: rgb(255, 255, 255);
+      font: {
+        size: 0.9rem;
+        weight: 600;
+      }
+    }
+
+    &--bold {
+      font-weight: 600;
+    }
+  }
+
+  &__ul {
+    padding-left: 1.3rem;
+    list-style: none;
+  }
+
+  &__li::before {
+    margin: 0 0.45rem 0 -1.3rem;
+    content: "\f005";
+    color: $myPurple;
+    font: {
+      family: "FontAwesome";
+      size: 0.8rem;
+    }
+  }
+}

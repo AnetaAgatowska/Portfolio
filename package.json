@@ -1,0 +1,41 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Website, which is my resume - both its code and content as well. Constantly working on it!",
+  "private": true,
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.5.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "node-sass": "^4.14.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "stylelint": "^13.3.3",
+    "stylelint-config-sass-guidelines": "^7.0.0",
+    "stylelint-config-standard": "^20.0.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "changelog": "auto-changelog -u -l false",
+    "webpack": "webpack",
+    "stylelint": "stylelint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MokkaKowalewska/portfolio.git"
+  },
+  "author": "Monika Kowalewska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MokkaKowalewska/portfolio/issues"
+  },
+  "homepage": "https://github.com/MokkaKowalewska/portfolio#readme"
+}

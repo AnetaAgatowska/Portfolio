@@ -1,0 +1,93 @@
+.projects {
+  padding: 9vh 0;
+  color: rgb(255, 255, 255);
+  width: 100%;
+
+  &__link {
+    background: rgb(255, 255, 255);
+    color: $myPurple;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover {
+      background: rgba(255, 255, 255, 0.658);
+    }
+  }
+
+  &__h3 {
+    text-align: center;
+    margin: 50px 0 10px 0;
+  }
+
+  &__caption {
+    @include media(">=tablet") {
+      width: 40%;
+      margin: 20px auto;
+    }
+    margin: 10px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  &__grid {
+    @include media(">tablet") {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template: repeat(4, auto) / repeat(2, 38vw);
+      justify-content: center;
+      justify-items: center;
+    }
+  }
+
+  &__imgWrapper {
+    @include flexCenter;
+    position: relative;
+    @include media(">tablet") {
+      height: 26vw;
+    }
+  }
+
+  &__img {
+    border-radius: 10px;
+    box-shadow: 0 0 1em rgb(245, 222, 179);
+    @include media(">tablet") {
+      height: 23vw;
+    }
+    @include media("<=tablet") {
+      width: 60vw;
+    }
+  }
+
+  &__btnsWrapper {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include flexCenter;
+  }
+
+  &__h4 {
+    margin: 10px 0;
+    align-self: center;
+    text-align: center;
+    font-size: 1.7rem;
+  }
+
+  &__p,
+  &__ul {
+    margin: 20px 40px;
+    padding: 0 20px;
+    font-size: 0.9rem;
+  }
+
+  &__ul {
+    list-style: none;
+    text-transform: uppercase;
+  }
+
+  &__li {
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+}

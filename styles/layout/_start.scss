@@ -1,0 +1,62 @@
+.start {
+  width: 100%;
+  color: $myPurple;
+  @include media("<=tablet") {
+    min-height: 100vh;
+    background: #fea684;
+    background: linear-gradient(315deg, #e68d69 0%, #feb9a3 74%);
+    text-align: center;
+  }
+  @include media(">tablet") {
+    @include flexCenter;
+    min-height: 12rem;
+    height: 100vh;
+    background: url("../images/start-background.svg") center center fixed no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+  }
+
+  &__h1 {
+    line-height: 0.9;
+    @include media("<=tablet") {
+      margin: 0 auto;
+      padding-top: 20vh;
+    }
+    @include media(">tablet") {
+      margin: 0 2rem;
+    }
+
+    font: {
+      family: $firaCode;
+      size: calc(80px + (192 - 80) * ((100vw - 320px) / (1440 - 320)));
+        //calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+      weight: 300;
+    }
+
+    .start__h1--transform {
+      display: inline-block;
+      transform: rotate(-180deg);
+      font: {
+        family: $montserrat;
+        weight: 700;
+      }
+    }
+  }
+
+  &__p {
+    margin: 2rem;
+
+    &--bigger {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__mouseIcon {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50vw - 15px);
+    height: 30px;
+    fill: $myPurple;
+    animation: mouseBounce 1s infinite ease-in-out;
+  }
+}
