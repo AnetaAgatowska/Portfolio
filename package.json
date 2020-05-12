@@ -30,12 +30,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MokkaKowalewska/portfolio.git"
+    "url": "git+https://github.com/AnetaAgatowska/portfolio.git"
   },
-  "author": "Monika Kowalewska",
+  "author": "Aneta Agatowska",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MokkaKowalewska/portfolio/issues"
+    "url": "https://github.com/AnetaAgatowska/portfolio/issues"
   },
-  "homepage": "https://github.com/MokkaKowalewska/portfolio#readme"
+  "homepage": "https://github.com/AnetaAgatowska/portfolio#readme"
 }
